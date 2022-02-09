@@ -1,0 +1,11 @@
+<p class = "mb-5">
+  Found <%= pluralize(@movies.count, 'Movie') %> when searching for: <%= params[:keywords] %>
+  Movies found when searching for: <%= params[:keywords] %>
+</p>
+<ul>
+    <% @movies.each do |movie| %>
+    <li>
+      <%= link_to movie.title, movie %>
+    </li>
+    <% end%>
+</ul>

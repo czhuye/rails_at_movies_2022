@@ -26,6 +26,10 @@
   <%=movie.average_vote%>
 </p>
 <p>
+  <strong>Genres: </strong>
+  <%= movie.genres.map(&:name).join(", ") %>
+</p>
+<p>
   <strong>Realease year: </strong>
   <%= movie.year%>
 </p>
